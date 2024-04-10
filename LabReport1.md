@@ -11,19 +11,17 @@ Indicate explicitly whether the output is an error or not, and if it's an error,
 ```
 Absolute path: /home/user/Zoe 
 
-Explanation: Using the above command line means the user did not specify the argument. If used without argument, cd would default the user to the home directory.
+Explaination: Using the above command line means the user did not specify the argument. If used without argument, cd would default the user to the home directory.
 
 This output is not an error. 
 
 ```
-{
   PS C:\Users\Zoe> cd Desktop
   PS C:\Users\Zoe\Desktop> 
-}
 ```
 Absolute path: /home/Users/Zoe
 
-Explanation: The result of the above command would change the current directory of the terminal. Specifiying the directory with an argument would reflect a chagne as shown by the directory in the line below.
+Explaination: The result of the above command would change the current directory of the terminal. Specifiying the directory with an argument would reflect a chagne as shown by the directory in the line below.
 
 The output is not an error.
 
@@ -53,7 +51,7 @@ PS C:\Users\Zoe> ls Downloads
 ```
 Absolute path: /home/Users/Zoe
 
-Explaination: The output reads the list of fiels from the directory path that was specified in the argument. This would open a list of files that is in Downloads.
+Explaination: The output reads the list of files from the directory path that was specified in the argument. This would open a list of files that is in Downloads.
 
 The output is not an error. 
 
@@ -62,7 +60,7 @@ PS C:\Users\Zoe\Downloads> ls Filename.txt
 ```
 Absolute path: /home/Users/Zoe/Downloads
 
-Explaination: The argument is a file in my Downloads that is being passed through ls. 
+Explaination: The argument is a file in my Downloads that is being passed through ls. The argument for a list cannot be a file. 
 
 The outoput is an error. 
 
