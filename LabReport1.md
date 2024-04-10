@@ -65,7 +65,7 @@ Explaination: The argument is a file in my Downloads that is being passed throug
 The outoput is an error. 
 
 
-# 2. cat: "Concatenate"
+# 3. cat: "Concatenate"
 ```
 PS C:\Users\Zoe> cat
 ```
