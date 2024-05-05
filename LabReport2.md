@@ -46,7 +46,25 @@ class ChatServer {
 }
 ```
 
-**What methods were being called?**
+# What methods were being called?
 
->main method of ChatServer: Initializes the server.
->handleRequest of Handler: Processes the incoming request.
+main method of ChatServer: Initializes the server.
+handleRequest of Handler: Processes the incoming request.
+
+
+# What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+handleRequest receives an URI object with a URI such as new URI("http://localhost:port/add-message?s=hello&user=Edwin").
+Relevant fields: num (remains 0 since it is not used in this specific handling), userInfo, and message.
+userInfo and message would change based on the parameters of the query. For the given URL, userInfo would be "Edwin" and message would be "hello".
+
+# How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+userInfo changes to "Edwin" and message to "hello" for the first request.
+For a second request, you might change the parameters, e.g., /add-message?s=goodbye&user=Jane. Here, userInfo would update to "Jane" and message to "goodbye".
+num does not change because the /add-message handling does not alter it.
+
+
+
+
+
+
+
