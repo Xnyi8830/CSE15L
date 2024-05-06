@@ -7,7 +7,7 @@ class Handler implements URLHandler {
     // various requests.
     int num = 0;
 
-    public String handleRequest(URI url) {
+    public String handleRequest(URI url) { 
             if (url.getPath().contains("/add-message")) {
                 String[] parameters = url.getQuery().split("&"); //it should only be query
                 String UserInfo = "";
@@ -47,24 +47,21 @@ class ChatServer {
 ```
 
 # What methods were being called?
-
 main method of ChatServer: Initializes the server.
 handleRequest of Handler: Processes the incoming request.
 
 
 # What are the relevant arguments to those methods, and the values of any relevant fields of the class?
-handleRequest receives an URI object with a URI such as new URI("http://localhost:port/add-message?s=hello&user=Edwin").
+handleRequest receives an URI object with a URI such as new URI("http://localhost:port/add-message?s=hello&user=Edwin"). 
 Relevant fields: num (remains 0 since it is not used in this specific handling), userInfo, and message.
 userInfo and message would change based on the parameters of the query. For the given URL, userInfo would be "Edwin" and message would be "hello".
 
 # How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
 userInfo changes to "Edwin" and message to "hello" for the first request.
-For a second request, you might change the parameters, e.g., /add-message?s=goodbye&user=Jane. Here, userInfo would update to "Jane" and message to "goodbye".
-num does not change because the /add-message handling does not alter it.
+For a second request,the parameters may be changed, e.g., /add-message?s=goodbye&user=Jane. Here, userInfo would update to "Jane" and message to "goodbye".
 
+# Screenshot 
 
-
-
-
-
+![image](https://github.com/Xnyi8830/CSE15L/blob/main/Screenshot%202024-05-04%20at%205.41.35%20PM.png)
+![image](https://github.com/Xnyi8830/CSE15L/blob/main/Screenshot%202024-05-05%20at%207.08.28%20PM.png)
 
