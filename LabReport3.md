@@ -1,4 +1,4 @@
-## Part 1: Choose one of the bugs from week 4 lab
+ ## Part 1: Choose one of the bugs from week 4 lab
 
 
 A failure-inducing input:   
@@ -155,7 +155,7 @@ output:
 
 This command will search through all files recursively within the ./technical directory and its subdirectories, displaying lines that do not include the word "security". The -i option ensures that the search ignores case sensitivity (matching "security", "Security", "SECURITY", etc.), while -v inverts the match. This is useful, for example, if you want to filter out all mentions of "security" to focus on other aspects of data or content in these documents.
 
-
+Example 2:  
 ```
 grep -riv "national" ./technical
 ```
