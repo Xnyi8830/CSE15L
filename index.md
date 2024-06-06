@@ -36,7 +36,7 @@ I also noticed that the output for factorial(5) is much lower than expected. I t
 
 
 Screenshot:
-![my Screenshot](https://github.com/Xnyi8830/CSE15L/blob/main/output.png)
+![plot](https://github.com/Xnyi8830/CSE15L/blob/main/output.png?raw=true)
 
 **TA Response**
 
@@ -90,7 +90,7 @@ local $ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runn
 
 And this is my output:   
 
-![screenshot 2](https://github.com/Xnyi8830/CSE15L/blob/main/testOutput.png)
+![plot](https://github.com/Xnyi8830/CSE15L/blob/main/testOutput.png?raw=true)
 
 
 After running it, i've realized my implementation has incorrect loop initialization and condition.
